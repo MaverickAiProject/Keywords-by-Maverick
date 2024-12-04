@@ -24,7 +24,7 @@
   
   .benefits-image {
     flex: 1;
-    max-width: 500px;
+    max-width: 310px;
     text-align: center;
   }
   
@@ -93,6 +93,9 @@
   @media (max-width: 800px) {
     .benefit {
       flex: 1 1 100%; /* Each benefit takes up 100% space (single column) */
+    }
+    .benefits-image {
+      max-width: 400px;
     }
   }
   
