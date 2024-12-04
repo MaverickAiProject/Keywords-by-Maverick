@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+  }
+  
+  body,html{
+    height: 100%;
+    width: 100%;
+  }
+  
+  :root{
+    --satisfy:"Satisfy", cursive;
+    --outfit: "Outfit", sans-serif;
+    --inter: "Inter", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --luckiest-guy: "Luckiest Guy", cursive;
+    --main-color: #34ad81;
+    --main-color-dark: #298966;
+    --main-blue: #1fb8f2;
+    --main-orange: #fc6f17;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }

@@ -1,0 +1,117 @@
+/* Benefits Section Styles */
+.benefits-section {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    font-family: var(--outfit);
+  }
+  
+  .main-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .benefits-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .benefits-image {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .benefits-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefits-content {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .benefit {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(50% - 15px); /* Each benefit takes up 50% space on large screens */
+  }
+  
+  .benefit:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefit-heading {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .benefit p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .benefits-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .benefits-image {
+      width: 100%;
+    }
+  
+    .benefits-content {
+      width: 100%;
+    }
+  
+    .benefit {
+      flex: 1 1 calc(50% - 15px);
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .benefit {
+      flex: 1 1 100%; /* Each benefit takes up 100% space (single column) */
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .benefits-container {
+      flex-direction: column; /* Stack image and content vertically */
+      padding: 20px;
+    }
+  
+    .main-heading {
+      font-size: 28px;
+    }
+  
+    .benefit-heading {
+      font-size: 17px;
+    }
+  
+    .benefit p {
+      font-size: 14px;
+    }
+  }
+  
