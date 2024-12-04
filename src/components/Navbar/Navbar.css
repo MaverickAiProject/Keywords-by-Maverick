@@ -6,11 +6,11 @@
     align-items: center;
     gap: 10px;
     position: relative;
-    border-bottom: 0.5px solid var(--main-color);
+    /* border-bottom: 0.5px solid var(--main-color); */
 }
 
 .navbar .nav-logo {
-    width: max(18vw, 200px);
+    width: max(15vw, 200px);
 }
 
 /* Desktop Menu */
